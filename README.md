@@ -102,6 +102,8 @@ data
 
 ## Model Evaluation
 
+The pre-trained model is [here](https://github.com/liangcheng147/SGF-Net/releases/tag/Pretrainedmodel)
+
 ### Evaluate GAN Models
 
 To evaluate the model performance on the GANGen dataset, run:
