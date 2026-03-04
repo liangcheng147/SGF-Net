@@ -1,0 +1,101 @@
+{
+  "epochs": 2,
+  "config": {
+    "training_set": "forensynths",
+    "backbone": [
+      "ViT-L/14",
+      1024
+    ],
+    "factor": 0.2,
+    "nproj": 4,
+    "proj_dim": 1024,
+    "batch_size": 96,
+    "lr": 0.0001,
+    "categories": [
+      "chair",
+      "horse"
+    ],
+    "savpath": "results/dwt/forensics/ViT-L-14_forensics_dwt_0.2_4_1024_64_0.0001_2class",
+    "model_path": "ckpt/dwt/model_forensics_dwt_trainable_2class.pth",
+    "with_dwt_branch": true
+  },
+  "results": {
+    "train_loss": [
+      0.264070241387315,
+      0.0411021565438138
+    ],
+    "val_loss": [
+      0.00850760966539383,
+      0.008480074778199197
+    ],
+    "val_acc": [
+      1.0,
+      1.0
+    ],
+    "val_ap": [
+      1.0,
+      1.0
+    ],
+    "test": {
+      "final": {
+        "imle": {
+          "acc": 0.9826856784706989,
+          "ap": 0.9983517590290686
+        },
+        "deepfake": {
+          "acc": 0.7524514338575393,
+          "ap": 0.9668355694032701
+        },
+        "stylegan2": {
+          "acc": 0.8642964446670005,
+          "ap": 0.9954707035574172
+        },
+        "biggan": {
+          "acc": 0.9845,
+          "ap": 0.9983922971565986
+        },
+        "progan": {
+          "acc": 0.999125,
+          "ap": 0.9999989367328448
+        },
+        "gaugan": {
+          "acc": 0.9978,
+          "ap": 0.9996070681830977
+        },
+        "whichfaceisreal": {
+          "acc": 0.955,
+          "ap": 0.9932634072300245
+        },
+        "stylegan": {
+          "acc": 0.9082790852946085,
+          "ap": 0.9984774775701701
+        },
+        "seeingdark": {
+          "acc": 0.8777777777777778,
+          "ap": 0.915660916750703
+        },
+        "san": {
+          "acc": 0.682648401826484,
+          "ap": 0.9155276031815023
+        },
+        "stargan": {
+          "acc": 0.9902451225612806,
+          "ap": 0.9999760872731505
+        },
+        "crn": {
+          "acc": 0.8569413976809778,
+          "ap": 0.9788107331252625
+        },
+        "cyclegan": {
+          "acc": 0.9841029523088569,
+          "ap": 0.999854014027939
+        }
+      }
+    }
+  },
+  "training_time": 1833.6378087997437,
+  "max_memory_used": 12.314994812011719,
+  "best_epoch": 0,
+  "best_metric": 1.0
+}
+//Mean: 91.0 / 98.2
